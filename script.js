@@ -11,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
             locationAlert.classList.remove('show');
         }, 3500);
     }
-
     // Function to get weather data
     async function getWeatherData(lat, lon) {
         try {
@@ -39,7 +38,6 @@ document.addEventListener('DOMContentLoaded', function() {
             `;
         }
     }
-
     // Get user's location and weather
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(
@@ -62,20 +60,15 @@ document.addEventListener('DOMContentLoaded', function() {
             <p>Your browser doesn't support location services.</p>
         `;
     }
-
-    // Handle CV download (this would typically link to your actual PDF file)
+    // Handle CV download
     downloadButton.addEventListener('click', function(e) {
         e.preventDefault();
-        // You would replace this with your actual CV PDF URL
-        const pdfUrl = 'MyResume.pdf';
+        // Using the correct path to your CV PDF file
+        const pdfUrl = 'My Resume.pdf';
         
-        // For demonstration, we'll show an alert
-        alert('CV download would start here. Please replace with your actual PDF file URL.');
-        
-        // Uncomment this line when you have your actual PDF ready
-        window.open(MyResume.pdf, '_blank');
+        // Remove the alert and directly open the PDF
+        window.open(pdfUrl, '_blank');
     });
-
     // Smooth scrolling for navigation links
     document.querySelectorAll('nav a').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
