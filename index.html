@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="location-alert" id="locationAlert">Location access granted! Fetching weather data...</div>
+    <div class="location-alert" id="locationAlert">Location access granted! Fetching location and weather data...</div>
 
     <header>
         <div class="container header-container">
@@ -19,7 +19,11 @@
                     <p>Virtual Assistant Administrator | Software Developer</p>
                 </div>
             </div>
-            <div class="weather-widget">
+            <div class="weather-location-widget">
+                <h3>Your Location</h3>
+                <div id="location-info" class="location-info">
+                    <p class="location-loading">Detecting your location...</p>
+                </div>
                 <h3>Your Local Weather</h3>
                 <div id="weather-info" class="weather-info">
                     <p class="weather-loading">Loading weather...</p>
