@@ -67,13 +67,13 @@ document.addEventListener('DOMContentLoaded', function() {
     downloadButton.addEventListener('click', function(e) {
         e.preventDefault();
         // You would replace this with your actual CV PDF URL
-        const pdfUrl = 'your-cv.pdf';
+        const pdfUrl = 'MyResume.pdf';
         
         // For demonstration, we'll show an alert
         alert('CV download would start here. Please replace with your actual PDF file URL.');
         
         // Uncomment this line when you have your actual PDF ready
-        // window.open(pdfUrl, '_blank');
+        window.open(MyResume.pdf, '_blank');
     });
 
     // Smooth scrolling for navigation links
